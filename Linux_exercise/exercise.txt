@@ -1,0 +1,19 @@
+mkdir cli-practice
+cd cli-practice/
+touch readme.md
+echo -e >> readme.md
+sed -i '1i Hi there,this is a readme file' readme.md
+sed -i '2i This is the second line of the readme' readme.md
+mv readme.md readme.txt
+mkdir document
+mv readme.txt document/
+mv readme.txt introduction.txt
+cp introduction.txt readme.txt
+echo "The quick brown fox jumps over a lazy dog">readme.txt
+mkdir ../docs
+cp * ../docs
+rm -rf ../document/
+cd ..
+mkdir -p parent/child/docs
+cp docs/introduction.txt parent/child/docs/
+
